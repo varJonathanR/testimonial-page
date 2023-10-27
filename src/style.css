@@ -1,0 +1,164 @@
+/* Base & Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+:root {
+    --yellow: #F5C044;
+    --green: #4CA154;
+    --dark: #18181B;
+    --gray: #52525A;
+    --sora-font: 'Sora', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: var(--sora-font);
+    background-color: #FAFAF9;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: var(--dark);
+}
+
+p, li {
+    color: var(--gray);
+}
+
+.check {
+    color: var(--green);
+}
+
+.fill {
+    color: var(--yellow);
+}
+
+.unfill {
+    color: var(--gray);
+}
+
+/* Styles */
+
+.container {
+    padding: 1rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100%;
+}
+
+.desc {
+    width: 100%;
+}
+
+.desc * {
+    margin: 1rem 0;
+}
+
+span {
+    border-radius: 50%;
+    background-color: var(--yellow);
+    padding: .8rem;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.desc {
+    width: 100%;
+}
+
+.desc-text {
+    font-size: 1.4rem;
+}
+
+.review {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-box:first-child {
+    margin-left: 20%;
+}
+
+.review-box {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 60%;
+}
+
+.top-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .8rem;
+}
+
+img {
+    width: 100px;
+}
+
+.user {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 13px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    .desc-text {
+        font-size: 1rem;
+    }
+    
+    .review-box {
+        width: 95%;
+    }
+
+    .review-box:first-child {
+        margin-left: 5%;
+    }
+    
+    .top-box {
+        gap: .8rem;
+    }
+    
+    img {
+        width: 75px;
+    }
+}
